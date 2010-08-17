@@ -1,0 +1,20 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://mozapps/content/preferences/preferences.css"?>
+<!DOCTYPE dialog SYSTEM "chrome://dataurime/locale/dataurime.dtd">
+
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+            xmlns:html="http://www.w3.org/1999/xhtml"
+            id="dataurime-preferences"
+            title="&prefs.title;"
+            persist="screenX screenY">
+    <prefpane id="all">
+        <preferences>
+            <!--preference id="flip-import" name="extensions.dataurime.flipImport" type="bool"/-->
+        </preferences>
+        <groupbox flex="1">
+            <!--caption label="&prefs.flipping;"/>
+            <checkbox preference="flip-import" label="&prefs.flipImport;" /-->
+        </groupbox>
+    </prefpane>
+</prefwindow>

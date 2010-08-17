@@ -1,0 +1,4 @@
+content dataurime chrome/content/
+overlay chrome://browser/content/browser.xul chrome://dataurime/content/dataurime.xul
+locale dataurime en-US chrome/locale/en-US/
+locale dataurime pt-BR chrome/locale/pt-BR/

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://dataurime/skin/dataurime.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://dataurime/locale/dataurime.dtd">
+<overlay id="dataurime-overlay"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script src="dataurime.js" />
+
+    <stringbundleset>
+        <stringbundle id="dataurime-strings" src="chrome://dataurime/locale/dataurime.properties"/>
+    </stringbundleset>
+
+    <toolbox id="navigator-toolbox">
+        <!--tooltip id="dataurime-tooltip" orient="vertical">
+            <description id="dataurime-status-tooltip" value="&dataurime.toggle;"/>
+        </tooltip-->
+    </toolbox>
+
+    <statusbar id="status-bar">
+        <statusbarpanel id="dataurime-statusbar-button"
+		    onclick="dataurime.toggleDirection(event)"
+		    tooltip="dataurime-tooltip">
+            <label id="dataurime-statusbar-text" style="margin: 1px" value="DataURI"/>
+        </statusbarpanel>
+        <!--popupset id="dataurime-popupset">
+            <menupopup id="dataurime-menupopup">
+                <menuitem id="dataurime-menuitem-toggle" label="&dataurime.toggle;" oncommand="dataurime.toggleDirection({button:0})" />
+                <menuitem id="dataurime-menuitem-exportcsschanges" label="&dataurime.exportCssChanges;" oncommand="dataurime.exportCSSChanges()" />
+                <menuseparator/>
+                <menuitem id="dataurime-menuitem-autotoggle" label="&dataurime.autoToggleDirection;" oncommand="dataurime.setAutoToggle()" type="checkbox"/>
+                <menuitem id="dataurime-menuitem-preferences" label="&dataurime.preferences;" oncommand="dataurime.showPreferences()" />
+            </menupopup>
+        </popupset-->
+    </statusbar>
+</overlay>
